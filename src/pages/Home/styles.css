@@ -1,0 +1,150 @@
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+section {
+  width: 100%;
+  text-align: right;
+}
+
+section div {
+  text-align: left;
+  margin-top: 40px;
+  font-size: 19px;
+  padding-right: 25px;
+  padding-left: 15px;
+  border-left: 5px solid #d9d9d9;
+}
+
+section div p {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Noticia Text', serif;
+}
+
+article {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+}
+
+section img {
+  max-width: 450px;
+  width: 100%;
+}
+
+section h1 {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.hr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  margin: 50px 0 30px 0;
+  height: 380px;
+  background: url(../../assets/images/banner-jonas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.author {
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+
+.author .date {
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.1rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 119px;
+}
+
+.author p {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.history {
+  margin-top: 20px;
+}
+
+.history h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-family: 'Noticia Text', serif;
+  font-weight: bold;
+}
+
+.history p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 17px;
+  margin-top: 10px;
+  font-family: 'Noticia Text', serif;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background: #d9d9d93b;
+  padding: 15px 0;
+}
+
+footer p {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.55);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 0 30px;
+  }
+
+  .author {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .author {
+    margin-top: 35px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  section img {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner {
+    height: 200px;
+  }
+}
